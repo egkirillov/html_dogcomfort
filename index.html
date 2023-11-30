@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogComfort</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="banner">
+                <img src="./picture/dog.png" alt="dog">
+                    <div class="logo">
+                        <img src="./picture/logo.png" alt="logo">
+                        <div class="logo__title">
+                            <div class="title">DogComfort</div>
+                            <div class="motto">отель для собак</div>
+                        </div>
+                    </div>
+            </div>
+            <div class="application">
+                <div class="application__title">Оставьте заявку, <br>и мы позаботимся о вашем питомце!</div>
+
+                    <div class="formDisable">
+                        <label class="form__label" for="ID">ID заявки</label>
+                        <input class="formDisable__item" type="text"  id="ID" placeholder="12-1234" disabled>
+                    </div>
+                    <div class="form">
+                        <label class="form__label" for="name">Имя *</label>
+                        <input class="form__item" type="text"  id="dogname" placeholder="Как зовут питомца?">
+                    </div>
+
+                    <div class="form">
+                        <label class="form__label" for="birth">Дата рождения *</label>
+                        <input class="form__item" type="birth"  id="birth" placeholder="ДД.ММ.ГГГГ">
+                    </div>                
+                    <div class="field">
+                        <label class="form__label">Пол *</label>
+                        <div class="field__group">
+                            <label class="radiobox">
+                                <input type="radio" name="group1" checked>
+                                <span class="radiobox__text">Мальчик</span>
+                            </label>
+                            <label class="radiobox">
+                                <input type="radio" name="group1">
+                                <span class="radiobox__text">Девочка</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="form__label">Стерилизована / кастрирован *</label>
+                        <div class="field__group">
+                            <label class="radiobox">
+                                <input type="radio" name="group2" checked>
+                                <span class="radiobox__text2">Да</span>
+                            </label>
+                            <label class="radiobox">
+                                <input type="radio" name="group2">
+                                <span class="radiobox__text2">Нет</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="formAddinfo">
+                        <label class="form__label" for="ID">Дополнительная информация</label>
+                        <input class="formAddinfo__item" type="text"  id="addinfo" placeholder="Расскажите нам про особенности и питание">
+                    </div>
+                    
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

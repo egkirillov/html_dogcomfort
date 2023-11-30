@@ -1,0 +1,196 @@
+body {  
+    color: #000;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+}
+
+.container {
+    width: 1280px;
+    margin: 0px auto;
+}
+
+.box {
+    display: flex;
+}
+
+.banner {
+    position: relative;
+}
+.logo {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    vertical-align: middle;
+    margin: 0px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    z-index: 1;  
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;       
+   
+}
+.motto {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.application {
+    width: 640px;
+    height: 1042px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 25px;
+    margin : 40px  
+    
+}
+.application__title {
+    grid-column: span 2;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 10px;       
+}
+.formDisable {
+    grid-column: span 2;   
+    
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px ;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.formDisable__item {
+    display: block;
+    box-sizing: border-box;
+    width: 270px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #D1D1D1;
+    background: #F3F3F3;
+    
+}
+
+.formDisable__item::placeholder{
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+  
+}
+
+.form__item {
+    display: block;
+    box-sizing: border-box;
+    width: 270px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #D1D1D1;   
+    
+}
+
+.form__item::placeholder{
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+  
+}
+  
+.field__group {
+    display: flex;
+    width: 270px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;   
+}
+
+.radiobox {
+    cursor: pointer;
+}
+.radiobox input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.radiobox__text{
+    text-align: center;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 31px 7px 32px;
+    
+}
+
+.radiobox__text2 {
+    padding: 8px 49px 7px 49px;
+}
+
+.radiobox input[type="radio"]:checked + .radiobox__text{
+    border-radius: 24px;
+    background: #E8721D;
+    color: #FFFFFF;
+}
+
+.radiobox input[type="radio"]:checked + .radiobox__text2{
+    border-radius: 24px;
+    background: #E8721D;
+    color: #FFFFFF;
+}
+
+.form-radio {
+    display: flex;
+}
+
+.formAddinfo {
+    grid-column: span 2;   
+}
+
+.formAddinfo__item {
+    display: block;
+    box-sizing: border-box;
+    width: 560px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;   
+    
+}
+
+.formAddinfo__item::placeholder{
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+  
+}
