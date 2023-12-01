@@ -34,7 +34,7 @@
 
                     <div class="form">
                         <label class="form__label" for="birth">Дата рождения *</label>
-                        <input class="form__item" type="birth"  id="birth" placeholder="ДД.ММ.ГГГГ">
+                        <input class="form__item" type="date"  id="birth" placeholder="ДД.ММ.ГГГГ">
                     </div>                
                     <div class="field">
                         <label class="form__label">Пол *</label>
@@ -64,16 +64,32 @@
                     </div>
                     <div class="formAddinfo">
                         <label class="form__label" for="ID">Дополнительная информация</label>
-                        <input class="formAddinfo__item" type="text"  id="addinfo" placeholder="Расскажите нам про особенности и питание">
+                        <input class="formAddinfo__item" type="text"  id="addinfo" placeholder="Расскажите нам про особенности и питание" >
                     </div>
-                    
 
-
-
-
-
-
-
+                <div class="application__title">Личная информация</div>
+                    <div class="form">
+                        <label class="form__label" for="yourname">Ваше имя *</label>
+                        <input class="form__item" type="text"  id="yourname" placeholder="Как вас зовут?">
+                    </div>
+                    <div class="form">
+                        <label class="form__label" for="phone">Телефон для связи *</label>
+                        <input class="form__item" type="text"  id="phone" placeholder="ДД.ММ.ГГГГ">
+                    </div> 
+                    <div class="formSelect">
+                        <label class="form__label" for="city">Район города</label>
+                        <select  id="aria" class="formSelect__item">
+                            <option selected="aria">Выберите район</option>
+                            <option class="form__item" value="1">Нижегородский</option>
+                            <option  class="form__item" value="2">Канавинский</option>
+                            <option class="form__item" value="3">Сормовский</option>
+                        </select>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__label"> Согласен(-а) на обработку персональных данных </span>
+                    </label>
+                    <div class="boxBtn"><button   class="button">Отправить</button></div>    
             </div>
         </div>
 
